@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 15.1 - Kelly Salas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <!-- Título -->
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <!-- Botón de hamburguesa para pantallas medianas y pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Barra de búsqueda -->
+                <form class="d-flex mb-3 mb-md-0 order-md-last" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+                <!-- Menú de navegación -->
+                <ul class="navbar-nav me-auto mt-3 mt-md-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobreMi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col">
+                <h1>Mi Portafolio de Fotografías</h1>
+            </div>
+        </div>
+
+        <!-- Carrusel -->
+        <div class="col">
+            <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <h2 class="display-6">"Viajes que inspiran"</h2>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <h2 class="display-6">"Historias que contar"</h2>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <h2 class="display-6">"Conectando con el mundo"</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Columna de categorías -->
+        <div class="col-sm-3">
+            <div class="list-group" id="portafolio">
+                <a href="#naturaleza" class="list-group-item list-group-item-action">Naturaleza</a>
+                <a href="#retratos" class="list-group-item list-group-item-action">Retratos</a>
+                <a href="#arquitectura" class="list-group-item list-group-item-action">Arquitectura</a>
+                <a href="#eventos" class="list-group-item list-group-item-action">Eventos</a>
+            </div>
+        </div>
+
+        <!-- Columna de contenido de descripción -->
+        <div id="sobreMi" class="col-sm-9">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel aliquam ut dolore totam
+                        atque facere tempore rerum repellat? Dolores, eligendi modi? Nam, hic quidem similique
+                        numquam excepturi sequi reiciendis.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, laborum. Est, nostrum eius.
+                        Cum a, ratione recusandae sequi nisi numquam eligendi aperiam labore, ad mollitia provident
+                        dicta ipsa sed error.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo, ipsam nobis quod
+                        magni adipisci aperiam mollitia quibusdam incidunt eveniet enim nulla saepe eos consequuntur
+                        exercitationem harum facere tempore laborum.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo, ipsam nobis quod
+                        magni adipisci aperiam mollitia quibusdam incidunt eveniet enim nulla saepe eos consequuntur
+                        exercitationem harum facere tempore laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- Portafolio -->
+<div id="galeria" class="container my-5">
+    <h2 class="text-center mb-4">Galería</h2>
+    <div class="row photo-grid">
+        <!-- Carrusel Naturaleza -->
+        <div class="col-md-6 mb-6">
+            <div id="naturaleza" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#naturaleza" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Foto naturaleza 1"></button>
+                    <button type="button" data-bs-target="#naturaleza" data-bs-slide-to="1"
+                        aria-label="Foto naturaleza 2"></button>
+                    <button type="button" data-bs-target="#naturaleza" data-bs-slide-to="2"
+                        aria-label="Foto naturaleza 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/naturaleza/IMG_2455.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/naturaleza/IMG_2692.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/naturaleza/IMG_4107.JPG" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#naturaleza"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#naturaleza"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carrusel Retratos -->
+        <div class="col-md-6 mb-6">
+            <div id="retratos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#retratos" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Retrato 1"></button>
+                    <button type="button" data-bs-target="#retratos" data-bs-slide-to="1"
+                        aria-label="Retrato 2"></button>
+                    <button type="button" data-bs-target="#retratos" data-bs-slide-to="2"
+                        aria-label="Retrato 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/retratos/IMG_3219.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/retratos/IMG_3828.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/retratos/IMG_4108.JPG" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#retratos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#retratos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carrusel Arquitectura -->
+        <div class="col-md-6 mb-6">
+            <div id="arquitectura" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#arquitectura" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Arquitectura 1"></button>
+                    <button type="button" data-bs-target="#arquitectura" data-bs-slide-to="1"
+                        aria-label="Arquitectura 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/arquitectura/IMG_2971.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/arquitectura/IMG_3272.JPG" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#arquitectura"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#arquitectura"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carrusel Eventos -->
+        <div class="col-md-6 mb-6">
+            <div id="eventos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#eventos" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Evento 1"></button>
+                    <button type="button" data-bs-target="#eventos" data-bs-slide-to="1"
+                        aria-label="Evento 2"></button>
+                    <button type="button" data-bs-target="#eventos" data-bs-slide-to="2"
+                        aria-label="Evento 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/eventos/IMG_2633.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/eventos/IMG_2871.JPG" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/eventos/IMG_3967.JPG" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contacto -->
+    <div id="contacto" class="container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+        </div>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

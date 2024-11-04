@@ -1,0 +1,125 @@
+:root {
+    --color-principal: #061A23;   /* Fondo principal oscuro */
+    --color-secundario: #06373A;  /* Segundo tono oscuro */
+    --color-acento: #1F5F5B;      /* Color de acento para detalles */
+    --color-boton: #1CCF60;       /* Verde brillante para botones */
+    --color-texto: #FFFFFF;       /* Blanco para el texto */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-principal);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-secundario);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--color-texto) !important;
+}
+
+.nav-link.active {
+    color: var(--color-boton) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--color-acento);
+}
+
+
+
+/* Encabezado principal */
+h1 {
+    color: var(--color-boton);
+}
+
+h2 {
+    color: var(--color-acento);
+}
+
+#inicio {
+    padding: 5rem;
+}
+
+/* Carrusel */
+.carousel-item {
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Galería */
+.photo-grid .col-md-6 {
+    margin-bottom: 2rem; 
+    padding: 0 1rem;    
+}
+
+
+.photo-grid .carousel {
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+}
+
+.carousel-inner img {
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Categorías */
+.list-group-item {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    border: none;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: var(--color-secundario);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#contacto h2 {
+    color: var(--color-boton);
+}
+
+.form-control {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    border: 1px solid var(--color-boton);
+}
+
+.form-control::placeholder {
+    color: #cfd8dc;
+}
+
+.btn-primary {
+    background-color: var(--color-boton);
+    border: none;
+    color: var(--color-texto);
+}
+
+.btn-primary:hover {
+    background-color: #17a652;
+}
+
+/* Ajustes de espaciado */
